@@ -8,30 +8,6 @@
 
 
 def rock_paper_scissors(user_input, computer_input):
-	if user_input is 'rock' and computer_input is 'paper':
-		return 'computer wins'
-	elif user_input is 'rock' and computer_input is 'scissors':
-		return 'you win'
-	elif user_input is 'rock' and computer_input is 'rock':
-		return 'tied game'
-	elif user_input is 'paper' and computer_input is 'scissors':
-		return 'computer wins'
-	elif user_input is 'paper' and computer_input is 'rock':
-		return 'you win'
-	elif user_input is 'paper' and computer_input is 'paper':
-		return 'tied game'
-	elif user_input is 'scissors' and computer_input is 'rock':
-		return 'computer wins'
-	elif user_input is 'scissors' and computer_input is 'paper':
-		return 'you win'
-	elif user_input is 'scissors' and computer_input is 'scissors':
-		return 'tied game'
-	else:
-		return 'enter valid characters'
-
-
-
-def rock_paper_scissors(user_input, computer_input):
     if user_input is 'rock' and computer_input is 'paper':
         return 'computer wins'
     elif user_input is 'rock' and computer_input is 'scissors':
@@ -66,4 +42,3 @@ if __name__ == "__main__":
         for computer_choice in possibilities:
             if user_choice == computer_choice:
                 assert rock_paper_scissors(user_choice, computer_choice) == 'tied game'
-
